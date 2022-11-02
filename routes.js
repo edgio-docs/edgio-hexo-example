@@ -1,14 +1,9 @@
-import { Router } from "@layer0/core/router";
+// This file was automatically added by edgio deploy.
+// You should commit this file to source control.
+import { Router } from '@edgio/core'
+import { hexoRoutes } from '@edgio/hexo'
 
-export default new Router().static("public", ({ cache }) => {
-  cache({
-    edge: {
-      maxAgeSeconds: 60 * 60 * 60 * 365,
-      forcePrivateCaching: true,
-    },
-    browser: {
-      maxAgeSeconds: 0,
-      serviceWorkerSeconds: 60 * 60 * 24,
-    },
-  });
-});
+export default new Router()
+  // Prevent search engines from indexing permalink URLs
+  .noIndexPermalink()
+  .use(hexoRoutes)

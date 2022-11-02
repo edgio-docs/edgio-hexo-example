@@ -4,5 +4,7 @@ db.json
 *.log
 node_modules/
 public/
-.deploy*/# Layer0 generated build directory
+.deploy*/
 .layer0
+# Edgio generated build directory
+.edgio
