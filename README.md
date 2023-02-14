@@ -8,7 +8,7 @@ https://layer0-docs-layer0-hexo-example-default.layer0-limelight.link
 
 ## Try It Now
 
-[![Deploy with Edgio](https://docs.edg.io/button.svg)](https://app.layer0.co/deploy?repo=https://github.com/layer0-docs/layer0-hexo-example)
+[![Deploy To Edgio](https://docs.edg.io/button.svg)](https://app.layer0.co/deploy?repo=https://github.com/edgio-docs/edgio-hexo-example)
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ npm install
 Run the Hexo app with the command:
 
 ```bash
-npm run edgio:dev
+edgio dev
 ```
 
 Load the site: http://127.0.0.1:3000
@@ -39,7 +39,7 @@ Load the site: http://127.0.0.1:3000
 You can do a production build of your app and test it locally using:
 
 ```bash
-npm run edgio:build && npm run edgio:production
+edgio build && edgio run --production
 ```
 
 Setting --production runs your app exactly as it will be uploaded to the Edgio cloud using serverless-offline.
@@ -49,7 +49,7 @@ Setting --production runs your app exactly as it will be uploaded to the Edgio c
 Deploying requires an account on Edgio. [Sign up here for free](https://app.layer0.co/signup). Once you have an account, you can deploy to Edgio by running the following in the root folder of your project:
 
 ```bash
-npm run edgio:deploy
+edgio deploy
 ```
 
 See [deploying](https://docs.edg.io/guides/deploying) for more information.
